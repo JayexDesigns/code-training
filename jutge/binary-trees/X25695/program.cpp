@@ -12,7 +12,7 @@ bool isBST(const arbreBin<int> &a) {
     nodesRight.push(a.fd());
     while (!nodesLeft.empty()) {
         if (!nodesLeft.front().es_buit()) {
-            if (a.arrel() < nodesLeft.front().arrel()) return false;
+            if (a.arrel() <= nodesLeft.front().arrel()) return false;
             nodesLeft.push(nodesLeft.front().fe());
             nodesLeft.push(nodesLeft.front().fd());
         }
@@ -20,7 +20,7 @@ bool isBST(const arbreBin<int> &a) {
     }
     while (!nodesRight.empty()) {
         if (!nodesRight.front().es_buit()) {
-            if (a.arrel() > nodesRight.front().arrel()) return false;
+            if (a.arrel() >= nodesRight.front().arrel()) return false;
             nodesRight.push(nodesRight.front().fe());
             nodesRight.push(nodesRight.front().fd());
         }
