@@ -12,7 +12,9 @@ struct Cotxe {
 
 typedef vector<Cotxe> Cotxes;
 
-int getLastCar(vector<Cotxe>& cars, int p1, int p2, int left, int right) {
+
+
+int getLastCar(Cotxes& cars, int p1, int p2, int left, int right) {
     if (right > left) {
         int pos = (left + right) / 2;
         bool nextPos;
@@ -34,8 +36,7 @@ int getLastCar(vector<Cotxe>& cars, int p1, int p2, int left, int right) {
     return -1;
 }
 
-
-int getFirstCar(vector<Cotxe>& cars, int p1, int p2, int left, int right) {
+int getFirstCar(Cotxes& cars, int p1, int p2, int left, int right) {
     if (right > left) {
         int pos = (left + right) / 2;
         bool prevPos;
@@ -57,6 +58,8 @@ int getFirstCar(vector<Cotxe>& cars, int p1, int p2, int left, int right) {
     return -1;
 }
 
+
+
 // Llegeix el nom, la distància i el preu d'un cotxe de l'entrada estandar,
 // crea el cotxe amb aquestes dades i el retorna.
 Cotxe llegirCotxe() {
@@ -68,17 +71,18 @@ Cotxe llegirCotxe() {
 // Retorna cert si el cotxe que és rep com a paràmetre té una distància
 // dins de l'interval [p1,p2].
 bool pertanyAInterval(const Cotxe &cotxe, int p1, int p2) {
-    return (cotxe.preu >= p1 and cotxe.preu <= p2);
+    return (cotxe.distancia >= p1 && cotxe.distancia <= p2);
 }
 
 int main() {
     int n;
     cin >> n;
-    vector<Cotxe> cars;
+    Cotxes cars;
     for (int i = 0; i < n; ++i) {
         Cotxe car = llegirCotxe();
         cars.push_back(car);
     }
+
     int m;
     cin >> m;
     for (int i = 0; i < m; ++i) {
@@ -102,5 +106,6 @@ int main() {
         }
         else cout << 0 << endl;
     }
+
     return 0;
 }
