@@ -1,0 +1,50 @@
+push_front 0
+pop_back 
+push_back 0
+max_equal_left
+push_front 0
+push_front 3
+max_equal_left
+max_equal_right
+push_front 3
+pop_front 
+push_front 3
+push_front 3
+push_back -1
+max_equal_right
+max_equal_right
+max_equal_right
+push_front 2
+push_front 2
+max_equal_right
+push_front -2
+push_front -1
+push_front 2
+push_back 2
+push_front 2
+push_front -2
+push_front -2
+push_back -2
+pop_front 
+pop_back 
+push_back -2
+pop_front 
+push_front 3
+push_back 0
+push_back 0
+max_equal_left
+push_front 2
+push_front 2
+push_front 2
+pop_back 
+push_back 2
+pop_back 
+push_front 0
+max_equal_right
+push_front 0
+push_back -1
+pop_front 
+push_front -1
+push_back -1
+push_front -2
+push_back -2

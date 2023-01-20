@@ -1,0 +1,32 @@
+max_equal_left
+max_equal_right
+pop_front 
+pop_back 
+push_front 0
+max_equal_left
+max_equal_right
+push_back 3
+push_back 0
+max_equal_left
+max_equal_right
+pop_back 
+push_back 3
+push_front 0
+max_equal_left
+max_equal_right
+push_front 3
+push_back 3
+max_equal_left
+max_equal_right
+push_back 3
+max_equal_left
+max_equal_right
+push_back 0
+max_equal_left
+max_equal_right
+push_front 5
+push_back 6
+push_back 6
+push_back 0
+max_equal_left
+max_equal_right
